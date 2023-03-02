@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class=" panel-heading">新建表单</div>
+    <div class=" panel-body">
+        <form method="post">
+            <div class="form-group">
+                <label for="mb">URL</label>
+                <input type="text" class="form-control" id="mb" placeholder="URL" name="url">
+            </div>
+            <div class="form-group">
+                <label for="pd">数量</label>
+                <input type="text" class="form-control" id="pd" placeholder="数量" name="count">
+            </div>
+            <button type="submit" class="btn btn-primary">提交</button>
+            <span style="color: red;">{{error}}</span>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
